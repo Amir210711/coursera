@@ -28,13 +28,13 @@
             <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
             <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
             <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>
-                <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
-                </span>                
-            </div>            
-        </div>
+        </ul>
+        <span class="navbar-text">
+            <a data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in"></span> Login</a>
+            <a id="loginButton" role="button"><span class="fa fa-sign-in"></span> Login</a>
+        </span>
+    </div>
+</div>
     </nav>
 
     <div id="loginModal" class="modal fade" role="dialog">
@@ -167,16 +167,16 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
-                </div>
-                
-                <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#" role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-warning btn-sm btn-block p-2">
-                        <strong>Reserve Table</strong>
-                    </a>
-                </div>
-            </div>
-        </div>
+
+					<img src="img/logo.png" class="img-fluid">
+				</div>
+				<div class="col-12 col-sm align-self-center">
+					<a type="button" class="btn btn-warning btn-sm btn-block" role="button"
+						data-toggle="modal" data-target="#reserveModal" title="Or Call us at +852 12345678">Reserve a Table</a>
+					<a type="button" class="btn btn-warning btn-sm btn-block" role="button" id="reserveButton" title="Or Call us at +852 12345678">Reserve a Table</a>
+				</div>
+			</div>
+		</div>
 
     </header>
 
@@ -341,6 +341,7 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 <script>
     $(document).ready(function(){
         $("#mycarousel").carousel( { interval: 2000 });
@@ -358,7 +359,7 @@
             });
         });
 </script>
-
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
