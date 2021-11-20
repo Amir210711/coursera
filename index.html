@@ -31,11 +31,10 @@
         </ul>
         <span class="navbar-text">
             <a data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in"></span> Login</a>
-            <a id="loginButton" role="button"><span class="fa fa-sign-in"></span> Login</a>
         </span>
     </div>
 </div>
-    </nav>
+</nav>
 
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
@@ -173,10 +172,10 @@
 				<div class="col-12 col-sm align-self-center">
 					<a type="button" class="btn btn-warning btn-sm btn-block" role="button"
 						data-toggle="modal" data-target="#reserveModal" title="Or Call us at +852 12345678">Reserve a Table</a>
-					<a type="button" class="btn btn-warning btn-sm btn-block" role="button" id="reserveButton" title="Or Call us at +852 12345678">Reserve a Table</a>
 				</div>
 			</div>
 		</div>
+    </div>
 
     </header>
 
@@ -359,7 +358,21 @@
             });
         });
 </script>
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js">
+    $(document).ready(function(){
+			$("#carousel-button").children("span").addClass('fa-pause');                    
+		}
+	});
+	$('#reserveButton').click(function(){
+		$('#reserveModal').modal('show');
+	});
+	$('#loginButton').click(function(){
+		$('#loginModal').modal('show');
+	});
+});
+
+</script>
+
 </body>
 
 </html>
