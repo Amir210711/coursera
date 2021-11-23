@@ -1,5 +1,4 @@
-@@ -12,70 +12,85 @@ $carousel-item-height: 300px;
-}
+$carousel-item-height: 300px;
 
 .row-header{
     @include zero-margin(0px,0px);
@@ -119,4 +118,7 @@ body{
 .modal-footer {
 	background:$background-light;
 }
+
+
   
+
