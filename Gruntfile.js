@@ -66,10 +66,10 @@ module.exports = function (grunt) {
         imagemin: {
             dynamic: {
                 files: [{
-                    expand: true,
-                    cwd: './',
-                    src: ['img/*.{png,jpg,gif}'],
-                    dest: 'dist'
+                    expand: true,                  // Enable dynamic expansion
+                    cwd: './',                   // Src matches are relative to this path
+                    src: ['img/*.{png,jpg,gif}'],   // Actual patterns to match
+                    dest: 'dist/'                  // Destination path prefix
                 }]
             }
         },
